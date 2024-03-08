@@ -227,36 +227,42 @@
 
 })(jQuery);
 
-/* (function () {
-	"use strict";
+$(function () {
 
-	var carousels = function () {
-		$(".owl-carousel1").owlCarousel({
-			loop: true,
-			center: true,
-			margin: 0,
-			responsiveClass: true,
-			nav: false,
-			responsive: {
-				0: {
-					items: 1,
-					nav: false
-				},
-				680: {
-					items: 2,
-					nav: false,
-					loop: false
-				},
-				1000: {
-					items: 3,
-					nav: true
-				}
+	var swiper = new Swiper('.carousel-gallery .swiper-container', {
+		effect: 'slide',
+		speed: 900,
+		slidesPerView: 5,
+		spaceBetween: 20,
+		simulateTouch: true,
+		autoplay: {
+			delay: 5000,
+			stopOnLastSlide: false,
+			disableOnInteraction: false
+		},
+		pagination: {
+			el: '.carousel-gallery .swiper-pagination',
+			clickable: true
+		},
+		breakpoints: {
+			// when window width is <= 320px
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 5
+			},
+			// when window width is <= 480px
+			425: {
+				slidesPerView: 2,
+				spaceBetween: 10
+			},
+			// when window width is <= 640px
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20
 			}
-		});
-	};
+		}
+	}); /*http://idangero.us/swiper/api/*/
 
-	(function ($) {
-		carousels();
-	})(jQuery);
-})();
- */
+
+
+});
