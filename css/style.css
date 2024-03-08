@@ -2647,6 +2647,7 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
+  margin-top: -80px;
 }
 
 .sales-team figure {
@@ -4193,6 +4194,19 @@ form {
   padding: 25px 40px;
   box-shadow: 0 8px 30px -7px #c9dff0;
   border-radius: 20px;
+}
+
+.formBtnCont{
+  display: flex;
+  justify-content: center;
+}
+
+.formBtn{
+  background-color: #9F8054;
+  color: #fff;
+  border: 1px solid #eaebee;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .Sell {
